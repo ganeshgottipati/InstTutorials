@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dattamber.insttutorials.tutorsignup"
+    android:background="@color/cream"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:id="@+id/stitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Tutor sign up"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/tline"
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:layout_below="@id/stitle"
+            android:layout_marginBottom="18dp"
+            android:src="@drawable/line" />
+
+        <EditText
+            android:id="@+id/tname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tline"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            android:hint="Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/tphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tname"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:maxLength="10" />
+
+        <EditText
+            android:id="@+id/tarea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tphone"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            android:hint="Area ( address )" />
+
+        <EditText
+            android:id="@+id/taddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tarea"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            android:gravity="top|left"
+            android:hint="Address"
+            android:lines="5" />
+
+        <EditText
+            android:id="@+id/temail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:layout_below="@id/taddress"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            android:hint="Email ID" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:id="@+id/tpwd"
+            android:layout_below="@id/temail"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:id="@+id/tpwdcnfm"
+            android:layout_below="@id/tpwd"/>
+        <CheckBox
+            android:id="@+id/tc1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/temail"
+            android:layout_below="@id/tpwdcnfm"
+            android:text="Engineering"
+            android:textSize="18dp"
+            android:layout_alignLeft="@id/temail" />
+
+        <CheckBox
+            android:id="@+id/tc1cse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/temail"
+            android:layout_below="@id/tc1"
+            android:layout_marginLeft="30dp"
+            android:text="CSE"
+            android:textSize="18dp"
+            android:visibility="gone"
+            android:layout_alignLeft="@id/temail" />
+
+        <CheckBox
+            android:id="@+id/tc1ece"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/temail"
+            android:layout_below="@id/tc1cse"
+            android:layout_marginLeft="30dp"
+            android:text="ECE"
+            android:textSize="18dp"
+            android:visibility="gone"
+
+            android:layout_alignLeft="@id/temail" />
+
+        <CheckBox
+            android:id="@+id/tc1mech"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/temail"
+            android:layout_below="@id/tc1ece"
+            android:layout_marginLeft="30dp"
+            android:text="MECH"
+            android:textSize="18dp"
+            android:visibility="gone"
+
+            android:layout_alignLeft="@id/temail" />
+
+        <CheckBox
+            android:id="@+id/tc1civil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/temail"
+            android:layout_below="@id/tc1mech"
+            android:layout_marginLeft="30dp"
+            android:text="CIVIL"
+            android:textSize="18dp"
+            android:visibility="gone"
+
+            android:layout_alignLeft="@id/temail" />
+
+        <CheckBox
+            android:id="@+id/tc1eee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/temail"
+            android:layout_below="@id/tc1civil"
+            android:layout_marginLeft="30dp"
+            android:text="EEE"
+            android:textSize="18dp"
+            android:visibility="gone"
+
+            android:layout_alignLeft="@id/temail" />
+
+        <CheckBox
+            android:id="@+id/tc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/temail"
+            android:layout_below="@id/tc1eee"
+            android:text="Diploma"
+            android:textSize="18dp"
+            android:layout_alignLeft="@id/temail" />
+
+        <CheckBox
+            android:id="@+id/tc2cse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/temail"
+            android:layout_below="@id/tc2"
+            android:layout_marginLeft="30dp"
+            android:text="CSE"
+            android:textSize="18dp"
+            android:visibility="gone"
+            android:layout_alignLeft="@id/temail" />
+
+        <CheckBox
+            android:id="@+id/tc2ece"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/temail"
+            android:layout_below="@id/tc2cse"
+            android:layout_marginLeft="30dp"
+            android:text="ECE"
+            android:textSize="18dp"
+            android:visibility="gone"
+
+            android:layout_alignLeft="@id/temail" />
+
+        <CheckBox
+            android:id="@+id/tc2mech"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/temail"
+            android:layout_below="@id/tc2ece"
+            android:layout_marginLeft="30dp"
+            android:text="MECH"
+            android:textSize="18dp"
+
+            android:visibility="gone"
+            android:layout_alignLeft="@id/temail" />
+
+        <CheckBox
+            android:id="@+id/tc2civil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/temail"
+            android:layout_below="@id/tc2mech"
+            android:layout_marginLeft="30dp"
+            android:text="CIVIL"
+            android:textSize="18dp"
+            android:visibility="gone"
+
+            android:layout_alignLeft="@id/temail" />
+
+        <CheckBox
+            android:id="@+id/tc2eee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/temail"
+            android:layout_below="@id/tc2civil"
+            android:layout_marginLeft="30dp"
+            android:text="EEE"
+            android:textSize="18dp"
+            android:visibility="gone"
+
+            android:layout_alignLeft="@id/temail" />
+
+        <CheckBox
+            android:id="@+id/tc3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/temail"
+            android:layout_below="@id/tc2eee"
+            android:text="Intermediate"
+            android:textSize="18dp"
+            android:layout_alignLeft="@id/temail" />
+
+        <CheckBox
+            android:id="@+id/tc3mpc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/temail"
+            android:layout_below="@id/tc3"
+            android:layout_marginLeft="30dp"
+            android:text="MPC"
+            android:textSize="18dp"
+            android:visibility="gone"
+
+            android:layout_alignLeft="@id/temail" />
+
+        <CheckBox
+            android:id="@+id/tc3bipc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/temail"
+            android:layout_below="@id/tc3mpc"
+            android:layout_marginLeft="30dp"
+            android:text="BIPC"
+            android:textSize="18dp"
+            android:visibility="gone"
+
+            android:layout_alignLeft="@id/temail" />
+
+        <CheckBox
+            android:id="@+id/tc3mec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/temail"
+            android:layout_below="@id/tc3bipc"
+            android:layout_marginLeft="30dp"
+            android:text="MEC"
+            android:textSize="18dp"
+            android:visibility="gone"
+
+            android:layout_alignLeft="@id/temail" />
+
+        <CheckBox
+            android:id="@+id/tc3cec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/temail"
+            android:layout_below="@id/tc3mec"
+            android:layout_marginLeft="30dp"
+            android:text="CEC"
+            android:textSize="18dp"
+            android:visibility="gone"
+
+            android:layout_alignLeft="@id/temail" />
+
+        <CheckBox
+            android:id="@+id/tc4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/temail"
+            android:layout_below="@id/tc3cec"
+            android:text="School"
+            android:textSize="18dp"
+            android:layout_alignLeft="@id/temail" />
+
+        <CheckBox
+            android:id="@+id/tc4ssc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/temail"
+            android:layout_below="@id/tc4"
+            android:layout_marginLeft="30dp"
+            android:text="SSC"
+            android:textSize="18dp"
+            android:visibility="gone"
+
+            android:layout_alignLeft="@id/temail" />
+
+        <CheckBox
+            android:id="@+id/tc4icse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/temail"
+            android:layout_below="@id/tc4ssc"
+            android:layout_marginLeft="30dp"
+            android:text="ICSE"
+            android:textSize="18dp"
+            android:visibility="gone"
+            android:layout_alignLeft="@id/temail" />
+
+        <CheckBox
+            android:id="@+id/tc4cbse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/temail"
+            android:layout_below="@id/tc4icse"
+            android:layout_marginLeft="30dp"
+            android:text="CBSE"
+            android:textSize="18dp"
+            android:visibility="gone"
+            android:layout_alignLeft="@id/temail" />
+
+        <TextView
+            android:id="@+id/tplease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tc4cbse"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Please upload your aadhar card and certificate:"
+            android:textAlignment="center"
+            android:textColor="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/taadhar"
+            android:layout_width="180dp"
+            android:layout_height="130dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:src="@drawable/upimg"
+            android:layout_alignTop="@+id/tcerti"
+            android:layout_alignLeft="@+id/tc4"
+            android:layout_alignStart="@+id/tc4" />
+        <ImageView
+            android:id="@+id/tcerti"
+            android:layout_width="180dp"
+            android:layout_height="130dp"
+            android:scaleType="fitCenter"
+            android:layout_weight="1"
+            android:src="@drawable/upimg"
+            android:layout_marginTop="14dp"
+            android:layout_below="@+id/tplease"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="17dp"
+            android:layout_marginEnd="17dp" />
+
+        <Button
+            android:id="@+id/tsubmit"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/taadhar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:text="SUBMIT" />
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

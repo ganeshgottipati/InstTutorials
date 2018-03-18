@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "693876114015",
+    "firebase_url": "https://tutorinsti.firebaseio.com",
+    "project_id": "tutorinsti",
+    "storage_bucket": "tutorinsti.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:693876114015:android:551989230ad6bb98",
+        "android_client_info": {
+          "package_name": "com.example.dattamber.insttutorials"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "693876114015-ek3qeecp3jdh07ldetan9gf8ij8c9grl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dattamber.insttutorials",
+            "certificate_hash": "8e3922c7d6ac514d80e2d72a9cd97745e566918c"
+          }
+        },
+        {
+          "client_id": "693876114015-tfev226m65a42j58j8ndkkh44c97h1i2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdqDz1kvHF1Hsc2MRL5UXc5nWhjMRzgr4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "693876114015-tfev226m65a42j58j8ndkkh44c97h1i2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

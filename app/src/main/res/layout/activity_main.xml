@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dattamber.insttutorials.MainActivity"
+    android:background="@color/cream"
+    >
+    
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:id="@+id/mlogo"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mtitle"
+        android:text="InstiTutors"
+        android:layout_below="@id/mlogo"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"
+        android:textSize="32dp"
+        android:fontFamily="sans-serif-smallcaps"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:hint="Enter email address"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/mtitle"
+        android:inputType="textEmailAddress"
+        android:id="@+id/memail"/>
+    
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:hint="Enter password"
+        android:layout_below="@id/memail"
+        android:inputType="textPassword"        
+        android:id="@+id/mpass"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:text="Sign in"
+        android:id="@+id/msignin"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_below="@id/mpass"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up as :"
+        android:id="@+id/signupas"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/msignin"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="3"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/signupas"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Student"
+            android:layout_weight="1"
+            android:id="@+id/mstudent"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Tutor"
+            android:layout_weight="1"
+            android:id="@+id/mtutor"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Institute"
+            android:layout_weight="1"
+            android:id="@+id/minstitute"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"/>
+    </LinearLayout>
+</RelativeLayout>

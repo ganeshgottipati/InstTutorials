@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">InstiTutors</string>
+    <string name="payment">We wish you to make the payment for the further continuation of the services provided by us</string>
+    <string-array name="Education">
+        <item>SELECT</item>
+        <item>Engineering</item>
+        <item>Diploma</item>
+        <item>Intermediate</item>
+        <item>Tenth</item>
+    </string-array>
+    <string-array name="engg">
+        <item>SELECT</item>
+        <item>CSE</item>
+        <item>ECE</item>
+        <item>CIVIL</item>
+        <item>MECH</item>
+        <item>EEE</item>
+        <item>OTHERS</item>
+    </string-array>
+    <string-array name="diploma">
+        <item>SELECT</item>
+        <item>CSE</item>
+        <item>ECE</item>
+        <item>CIVIL</item>
+        <item>MECH</item>
+        <item>EEE</item>
+        <item>OTHERS</item>
+    </string-array>
+    <string-array name="inter">
+        <item>SELECT</item>
+        <item>MPC</item>
+        <item>BIPC</item>
+        <item>MEC</item>
+        <item>CEC</item>
+        <item>OTHERS</item>
+    </string-array>
+    <string-array name="tenth">
+        <item>SELECT</item>
+        <item>SSC</item>
+        <item>CBSE</item>
+        <item>ICSE</item>
+    </string-array>
+    <string-array name="course">
+        <item>SELECT</item>
+    </string-array>
+    <string name="title_activity_student_home">StudentHome</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main3">Main3Activity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_tutor_home">TutorHome</string>
+    <string name="title_activity_institute_home">InstituteHome</string>
+</resources>

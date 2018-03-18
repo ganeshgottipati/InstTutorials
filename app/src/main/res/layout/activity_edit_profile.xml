@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dattamber.insttutorials.EditProfile"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cream">
+            <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvname"
+        android:text="Name"
+        android:textSize="25sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edname"
+        android:layout_below="@id/tvname"
+        android:layout_alignStart="@id/tvname"
+        android:layout_alignLeft="@id/tvname"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvmail"
+        android:text="Email"
+        android:textSize="25sp"
+        android:layout_below="@id/edname"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edmail"
+        android:layout_below="@id/tvmail"
+        android:layout_alignStart="@id/tvname"
+        android:layout_alignLeft="@id/tvname"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvphno"
+        android:text="Phone Number"
+        android:textSize="25sp"
+        android:layout_below="@id/edmail"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edphno"
+        android:layout_below="@id/tvphno"
+        android:layout_alignStart="@id/tvname"
+        android:layout_alignLeft="@id/tvname"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvarea"
+        android:text="Area"
+        android:textSize="25sp"
+        android:layout_below="@id/edphno"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edarea"
+        android:layout_below="@id/tvarea"
+        android:layout_alignStart="@id/tvname"
+        android:layout_alignLeft="@id/tvname"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvadd"
+        android:text="Address"
+        android:textSize="25sp"
+        android:layout_below="@id/edarea"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edadd"
+        android:layout_below="@id/tvadd"
+        android:layout_alignStart="@id/tvname"
+        android:layout_alignLeft="@id/tvname"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvpass"
+        android:text="Password"
+        android:textSize="25sp"
+        android:layout_below="@id/edadd"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edpass"
+        android:layout_below="@id/tvpass"
+        android:inputType="textPassword"
+        android:layout_alignStart="@id/tvname"
+        android:layout_alignLeft="@id/tvname"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:id="@+id/editsubmit"
+        android:textSize="25sp"
+        android:layout_below="@id/edpass"
+        android:layout_centerHorizontal="true"
+        />
+
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

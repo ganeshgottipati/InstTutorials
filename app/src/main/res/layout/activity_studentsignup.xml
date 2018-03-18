@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dattamber.insttutorials.studentsignup"
+    android:background="@color/cream"
+    >
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true">
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student sign up"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:textSize="20dp"
+        android:id="@+id/stitle"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:src="@drawable/line"
+        android:layout_below="@id/stitle"
+        android:layout_marginBottom="18dp"
+        android:id="@+id/sline"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="29dp"
+        android:id="@+id/sname"
+        android:inputType="textPersonName"
+        android:layout_below="@id/sline"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:id="@+id/sphone"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="29dp"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:layout_below="@+id/sname"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= " Education :"
+        android:textSize="19dp"
+        android:textColor="@android:color/black"
+        android:id="@+id/textView"
+        android:layout_below="@+id/sphone"
+        android:layout_alignStart="@+id/sphone" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= " Course :"
+            android:textSize="19dp"
+            android:textColor="@android:color/black"
+            android:id="@+id/textView1"
+            android:layout_below="@+id/textView"
+            android:layout_alignStart="@+id/textView" />
+     <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sedu"
+        android:layout_marginEnd="29dp"
+        android:entries="@array/Education"
+        android:layout_above="@+id/textView1"
+        android:layout_toEndOf="@+id/textView" >
+         </Spinner>
+     <Spinner
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/scourse"
+         android:layout_marginEnd="29dp"
+         android:entries="@array/course"
+         android:layout_above="@+id/sarea"
+         android:layout_toEndOf="@+id/textView1">
+     </Spinner>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Area ( address )"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="29dp"
+        android:id="@+id/sarea"
+        android:layout_below="@id/textView1"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="29dp"
+        android:id="@+id/saddress"
+        android:gravity="top|left"
+        android:lines="5"
+        android:layout_below="@id/sarea"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email ID"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="29dp"
+        android:inputType="textEmailAddress"
+        android:id="@+id/semail"
+        android:layout_below="@id/saddress"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Enter Password"
+            android:layout_marginStart="29dp"
+            android:layout_marginEnd="29dp"
+            android:id="@+id/spassenter"
+            android:layout_below="@id/semail"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Confirm Password"
+            android:layout_marginStart="29dp"
+            android:layout_marginEnd="29dp"
+            android:id="@+id/spassconfirm"
+            android:layout_below="@id/spassenter"
+            />
+
+
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ssubmit"
+        android:text="SUBMIT"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:layout_below="@id/spassconfirm"
+        style="@style/Widget.AppCompat.Button.Borderless"/>
+</RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
